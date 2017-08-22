@@ -8,13 +8,11 @@
   position: relative;
   width: 100%;
 }
-
 .image {
   display: block;
   width: 100%;
   height: auto;
 }
-
 .overlay {
   position: absolute;
   bottom: 0;
@@ -26,11 +24,9 @@
   height: 100%;
   transition: .5s ease;
 }
-
 .container1:hover .overlay {
   width: 100%;
 }
-
 .text {
   white-space: nowrap; 
   color: white;
@@ -47,7 +43,6 @@
     position: relative;
     width: 100%;
 }
-
 .image {
   opacity: 1;
   display: block;
@@ -56,7 +51,6 @@
   transition: .5s ease;
   backface-visibility: hidden;
 }
-
 .middle {
   transition: .5s ease;
   opacity: 0;
@@ -66,15 +60,12 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
 }
-
 .container2:hover .image {
   opacity: 0.3;
 }
-
 .container2:hover .middle {
   opacity: 1;
 }
-
 .text {
   background-color: LimeGreen;
   color: white;
@@ -208,7 +199,7 @@ window.onclick = function(event) {
 <div class="container2">
   <img src="BensBellsStory.png" alt="HomeStory" class="image" style="width: 100%; height: auto;">
   <div class="middle">
-    <div class="text"><center><img src="BensBellsStoryButton.png" alt="HomeStoryButton" style="width: 75%; height: auto;"></center></div>
+    <div class="text"><center><img src="BensBellsStoryButton.png" alt="HomeStoryButton" style="width: auto; height: 150;"></center></div>
   </div>
 </div>
 </body>
