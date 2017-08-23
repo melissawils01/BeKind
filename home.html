@@ -107,7 +107,42 @@
   font-size: 16px;
   padding: 16px 32px;
 }
-</style>    
+</style>
+<style>
+.container4 {
+    position: relative;
+    width: 100%;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.container4:hover .image {
+  opacity: 0.3;
+}
+.container4:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: LimeGreen;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
 <style> 
 div.container {
     width: 100%;
@@ -233,13 +268,16 @@ window.onclick = function(event) {
   </div>
 </div>
 </body>
-<br>
-<br>
-<br>
-<br>
-<br>
 <body>
 <div class="container3">
+  <img src="HomeEvent.png" alt="HomeEvents" class="image" style="width: 100%; height: auto;">
+  <div class="middle">
+    <div class="text"><center><img src="HomeEventsButton.png" alt="HomeEventsButton" style="width: auto; height: 150;"></center></div>
+  </div>
+</div>
+</body>
+<body>
+<div class="container4">
   <img src="BensBellsStory.png" alt="HomeStory" class="image" style="width: 100%; height: auto;">
   <div class="middle">
     <div class="text"><center><img src="BensBellsStoryButton.png" alt="HomeStoryButton" style="width: auto; height: 150;"></center></div>
